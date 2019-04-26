@@ -1,0 +1,5 @@
+image:
+  file: Dockerfile
+tasks:
+  - before: ~/android-sdk/tools/bin/avdmanager create avd -n avd-25 -k "system-images;android-25;google_apis;x86_64"
+  - command: ~/android-sdk/emulator/emulator -avd avd-25
